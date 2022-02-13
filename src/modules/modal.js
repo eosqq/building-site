@@ -3,7 +3,6 @@ import { animate } from "./helpers"
 const modal = () => {
 
 const callbackBtn = document.querySelectorAll('.callback-btn')
-console.log(callbackBtn);
 const modalCallback = document.querySelector('.modal-callback')
 const modalOverlay = document.querySelector('.modal-overlay ')
 const closeModal = document.querySelector('.modal-close')
