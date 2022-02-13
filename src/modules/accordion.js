@@ -28,7 +28,7 @@ const accordeonTitles = accordion.querySelectorAll('.title')
           removeClassActive()
           element.classList.add('active')
         }
-      showContentOfActiveElement()        
+      showContentOfActiveElement()
       })
     })
 }
