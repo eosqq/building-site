@@ -6,6 +6,7 @@ const callbackBtn = document.querySelectorAll('.callback-btn')
 console.log(callbackBtn);
 const modalCallback = document.querySelector('.modal-callback')
 const modalOverlay = document.querySelector('.modal-overlay ')
+const closeModal = document.querySelector('.modal-close')
 
 callbackBtn.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -23,6 +24,16 @@ callbackBtn.forEach((btn) => {
         modalCallback.style.display = 'block'
         modalOverlay.style.display = 'block'
     })
+})
+
+closeModal.addEventListener('click', (e) => {
+    modalCallback.style.display = 'none'
+    modalOverlay.style.display = 'none'
+})
+
+modalOverlay.addEventListener('click', (e) => {
+    modalCallback.style.display = 'none'
+    modalOverlay.style.display = 'none'
 })
 }
 
