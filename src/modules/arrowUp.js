@@ -19,9 +19,13 @@ const arrowUp = () => {
 
     const scrollToHeader = () => {
         arrow.setAttribute("href", ".main-wrapper")
-        arrow.addEventListener('click', (e) => {
+        scroll(arrow)
+    }
+
+    const scroll = (btn) => {
+        btn.addEventListener('click', (e) => {
             e.preventDefault()
-            const href = arrow.getAttribute("href")
+            const href = btn.getAttribute("href")
             const section = document.querySelector(href)
             if (section) {
                 section.scrollIntoView({
@@ -34,6 +38,9 @@ const arrowUp = () => {
 
     showArrow()
     scrollToHeader()
+    elementsMenu.forEach((elem) => {
+        scroll(elem)
+    })
 }
 
 export default arrowUp
