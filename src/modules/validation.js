@@ -3,7 +3,6 @@ const validation = () => {
 const forms = document.querySelectorAll('input')
 
 const validate = () => {
-    let success = true
 
     forms.forEach((form) => {
         if (form.name === 'fio') {
